@@ -97,12 +97,12 @@ module.exports = ({ env }) => ({
     connection: {
       host: env(
         "DATABASE_HOST",
-        "taxidev-db.cta8heiwd6mz.eu-north-1.rds.amazonaws.com"
+        "dpg-ck450kk1g3fs73a8d3k0-a.singapore-postgres.render.com"
       ),
       port: env.int("DATABASE_PORT", 5432),
-      database: env("DATABASE_NAME", "taxidevdb"),
-      user: env("DATABASE_USERNAME", "postgres"),
-      password: env("DATABASE_PASSWORD", "Test123#"),
+      database: env("DATABASE_NAME", "taxidb"),
+      user: env("DATABASE_USERNAME", "taxidb_user"),
+      password: env("DATABASE_PASSWORD", "jH0ndPR2Ni89ovaUawh0tMKmXj1qxVU5"),
       schema: env("DATABASE_SCHEMA", "public"),
       ssl: {
         rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false),
