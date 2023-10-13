@@ -79,6 +79,9 @@
     },
     "locationAccess": {
       "type": "string"
+    },
+    "address": {
+      "type": "text"
     }
   }
 }
