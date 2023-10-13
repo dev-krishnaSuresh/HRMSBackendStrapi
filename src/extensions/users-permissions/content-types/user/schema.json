@@ -82,6 +82,9 @@
     },
     "address": {
       "type": "text"
+    },
+    "age": {
+      "type": "integer"
     }
   }
 }
