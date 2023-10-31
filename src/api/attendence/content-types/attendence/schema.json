@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attendences",
+  "info": {
+    "singularName": "attendence",
+    "pluralName": "attendences",
+    "displayName": "attendence",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "attendenceData": {
+      "type": "json"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "daysPresentInCurrentMonth": {
+      "type": "integer"
+    },
+    "daysAbsentInCurrentMonth": {
+      "type": "integer"
+    },
+    "todayStatus": {
+      "type": "string"
+    }
+  }
+}
