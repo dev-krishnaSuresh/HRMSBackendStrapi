@@ -85,6 +85,21 @@
     },
     "age": {
       "type": "integer"
+    },
+    "promotionApproval": {
+      "type": "json"
+    },
+    "leaveApproval": {
+      "type": "json"
+    },
+    "voluntaryResignation": {
+      "type": "json"
+    },
+    "involuntaryResignation": {
+      "type": "json"
+    },
+    "exitFormalities": {
+      "type": "json"
     }
   }
 }

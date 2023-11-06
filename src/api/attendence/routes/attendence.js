@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * attendence router
  */
 
-const { createCoreRouter } = require('@strapi/strapi').factories;
+const { createCoreRouter } = require("@strapi/strapi").factories;
 
-module.exports = createCoreRouter('api::attendence.attendence');
+module.exports = createCoreRouter("api::attendence.attendence");
