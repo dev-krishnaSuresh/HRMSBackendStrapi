@@ -4,7 +4,8 @@
   "info": {
     "singularName": "administration",
     "pluralName": "administrations",
-    "displayName": "administration"
+    "displayName": "administration",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,7 +24,7 @@
     "pastDesignation": {
       "type": "json"
     },
-    "admin_user": {
+    "user": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"

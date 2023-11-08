@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exit_managements",
+  "info": {
+    "singularName": "exit-management",
+    "pluralName": "exit-managements",
+    "displayName": "exitManagement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "resignationData": {
+      "type": "json"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

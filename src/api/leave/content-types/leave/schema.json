@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leaves",
+  "info": {
+    "singularName": "leave",
+    "pluralName": "leaves",
+    "displayName": "leave",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "totalLeaves": {
+      "type": "decimal"
+    },
+    "leavesGranted": {
+      "type": "decimal"
+    },
+    "leavesRemaining": {
+      "type": "decimal"
+    },
+    "lossOfPayDays": {
+      "type": "decimal"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "leaveRequests": {
+      "type": "json"
+    }
+  }
+}
