@@ -97,12 +97,12 @@ module.exports = ({ env }) => ({
     connection: {
       host: env(
         "DATABASE_HOST",
-        "dpg-ck450kk1g3fs73a8d3k0-a.singapore-postgres.render.com"
+        "dpg-cm01lbmd3nmc738i0avg-a.singapore-postgres.render.com"
       ),
       port: env.int("DATABASE_PORT", 5432),
-      database: env("DATABASE_NAME", "taxidb"),
-      user: env("DATABASE_USERNAME", "taxidb_user"),
-      password: env("DATABASE_PASSWORD", "jH0ndPR2Ni89ovaUawh0tMKmXj1qxVU5"),
+      database: env("DATABASE_NAME", "hrms_db_2hxh"),
+      user: env("DATABASE_USERNAME", "hrms_db_2hxh_user"),
+      password: env("DATABASE_PASSWORD", "lQWY1CEd9plLoImPs1DxqnujjGYyMmZY"),
       schema: env("DATABASE_SCHEMA", "public"),
       ssl: {
         rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false),
