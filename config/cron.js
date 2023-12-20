@@ -30,7 +30,7 @@ module.exports = {
       console.log("updatedAttendanceEntry", updatedAttendanceEntry);
     },
     options: {
-      rule: "*/1 * * * *",
+      rule: "* * */1 * *",
     },
   },
 
