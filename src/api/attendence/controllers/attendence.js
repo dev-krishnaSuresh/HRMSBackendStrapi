@@ -23,10 +23,12 @@ module.exports = createCoreController(
         return (
           d.user && {
             id: d.user.id,
+            attendenceId: d.id,
             name: d.user.username,
             daysPresent: d.daysPresentInCurrentMonth,
             daysAbsent: d.daysAbsentInCurrentMonth,
             attendanceStatus: d.todayStatus,
+            attendenceData: d.attendenceData,
           }
         );
       });

@@ -27,7 +27,11 @@
       "type": "integer"
     },
     "todayStatus": {
-      "type": "string"
+      "type": "enumeration",
+      "enum": [
+        "Present",
+        "Absent"
+      ]
     }
   }
 }
