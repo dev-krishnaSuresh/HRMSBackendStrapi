@@ -13,16 +13,20 @@
   "pluginOptions": {},
   "attributes": {
     "totalLeaves": {
-      "type": "decimal"
+      "type": "decimal",
+      "default": 16
     },
     "leavesGranted": {
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "leavesRemaining": {
-      "type": "decimal"
+      "type": "decimal",
+      "default": 16
     },
     "lossOfPayDays": {
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "user": {
       "type": "relation",
@@ -31,6 +35,18 @@
     },
     "leaveRequests": {
       "type": "json"
+    },
+    "CausualLeaves": {
+      "type": "integer",
+      "default": 4
+    },
+    "medicalLeave": {
+      "type": "integer",
+      "default": 6
+    },
+    "previlageLeave": {
+      "type": "integer",
+      "default": 6
     }
   }
 }

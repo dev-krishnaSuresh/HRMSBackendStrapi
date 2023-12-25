@@ -19,10 +19,12 @@ module.exports = createCoreController(
       const response = data.map((d) => {
         return (
           d.user && {
+            administrationId: d.id,
             id: d.user.id,
             name: d.user.username,
             designation: d.currentDesignation,
             department: d.currentDepartment,
+            promotionApproval: d.promotionApproval,
           }
         );
       });

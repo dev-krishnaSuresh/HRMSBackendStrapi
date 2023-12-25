@@ -6,13 +6,13 @@ module.exports = {
 
   rewritingAttendenceStatus: {
     task: async ({ strapi }) => {
+      console.log("rewritingAttendenceStatus");
       // Add your own logic here (e.g. send a queue of email, create a database backup, etc.).
       const attendanceEntry = await strapi.db
         .query("api::attendence.attendence")
         .findMany({
           orderBy: { id: "desc" },
         });
-      console.log("attendanceEntry", attendanceEntry);
       const updatedAttendanceEntry = Promise.all(
         attendanceEntry.map(async (entry) => {
           await strapi.entityService.update(
@@ -27,10 +27,9 @@ module.exports = {
           );
         })
       );
-      console.log("updatedAttendanceEntry", updatedAttendanceEntry);
     },
     options: {
-      rule: "* * * */1 *",
+      rule: "0 0 0 */1 * *",
     },
   },
 
