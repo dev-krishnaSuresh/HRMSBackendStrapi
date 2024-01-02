@@ -18,9 +18,6 @@
     "currentDesignation": {
       "type": "string"
     },
-    "pastDepartment": {
-      "type": "json"
-    },
     "pastDesignation": {
       "type": "json"
     },

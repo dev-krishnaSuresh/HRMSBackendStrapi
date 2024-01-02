@@ -8,5 +8,13 @@ module.exports = {
         auth: false,
       },
     },
+    {
+      method: "GET",
+      path: "/getPromotionApprovelist",
+      handler: "administration.getPromotionApprovelist",
+      config: {
+        auth: false,
+      },
+    },
   ],
 };

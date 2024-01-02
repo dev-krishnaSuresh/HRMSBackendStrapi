@@ -47,6 +47,15 @@
     "previlageLeave": {
       "type": "integer",
       "default": 6
+    },
+    "restrictedHolidays": {
+      "type": "json"
+    },
+    "leaveCancel": {
+      "type": "json"
+    },
+    "compOffGrant": {
+      "type": "json"
     }
   }
 }

@@ -8,5 +8,29 @@ module.exports = {
         auth: false,
       },
     },
+    {
+      method: "POST",
+      path: "/leaveAppyEmp",
+      handler: "leave.leaveAppyEmp",
+      config: {
+        auth: false,
+      },
+    },
+    {
+      method: "POST",
+      path: "/leaveListEmp",
+      handler: "leave.leaveListEmp",
+      config: {
+        auth: false,
+      },
+    },
+    {
+      method: "POST",
+      path: "/leaveApprovalListEmp",
+      handler: "leave.leaveApprovalListEmp",
+      config: {
+        auth: false,
+      },
+    },
   ],
 };
