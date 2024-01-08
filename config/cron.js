@@ -29,7 +29,7 @@ module.exports = {
       );
     },
     options: {
-      rule: "0 0 0 */1 * *",
+      rule: "0 0 0 * * *",
     },
   },
 

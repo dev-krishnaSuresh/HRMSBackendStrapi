@@ -37,15 +37,15 @@
       "type": "json"
     },
     "CausualLeaves": {
-      "type": "integer",
+      "type": "decimal",
       "default": 4
     },
     "medicalLeave": {
-      "type": "integer",
+      "type": "decimal",
       "default": 6
     },
     "previlageLeave": {
-      "type": "integer",
+      "type": "decimal",
       "default": 6
     },
     "restrictedHolidays": {

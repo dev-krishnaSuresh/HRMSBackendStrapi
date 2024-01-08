@@ -32,5 +32,13 @@ module.exports = {
         auth: false,
       },
     },
+    {
+      method: "POST",
+      path: "/leaveApproval",
+      handler: "leave.leaveApproval",
+      config: {
+        auth: false,
+      },
+    },
   ],
 };
